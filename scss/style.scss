@@ -1,8 +1,27 @@
-@import 'utilities';
 @import 'config';
 @import 'mobile';
+@import 'buttons';
 
 body {
     font-family: $font-stack;
 }
 
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    ul {
+      display: flex;
+      list-style-type: none;
+    }
+}
+
+#logo {
+    height: 60px;;
+}
