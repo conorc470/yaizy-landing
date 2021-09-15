@@ -1,0 +1,15 @@
+@import 'utilities';
+
+.watch {
+    color: $bodycolour;
+}
+
+p {
+    font-size: 16px;
+    li {
+        font-size: 14px;;
+    }
+    &ul {
+        color: white;
+    }
+}
