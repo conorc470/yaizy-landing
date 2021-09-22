@@ -21,38 +21,8 @@ body {
   font-family: "Open Sans", sans-serif;
 }
 
-.container {
-  max-width: 1100px;
-  margin: 0 auto;
-}
-
-.flex-container {
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.flex-container ul {
-  list-style-type: none;
-}
-
-.main-button {
-  display: inline-block;
-  width: 149px;
-  height: 45px;
-  background: #307FF5;
-  border-radius: 4px;
-  color: #fff;
-  font-family: Open Sans;
-  font-weight: 700;
-  font-size: 16px;
-  text-align: center;
-  border: blue;
-}
-
 .logo {
-  height: 60px;
+  height: 50px;
 }
 
 .banner-cta {
@@ -60,7 +30,67 @@ body {
 }
 
 .banner-img img {
-  padding: 2rem 0 2rem 4rem;
+  margin: 2rem 0 0 4rem;
+}
+
+/* ============================================ *
+ * Containers
+ * ============================================ */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.flex-container {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.nav {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav ul {
+  list-style-type: none;
+}
+
+/* ============================================ *
+ * Buttons
+ * ============================================ */
+.small-button, .big-button {
+  background: #307FF5;
+  border-radius: 4px;
+  color: #fff;
+  font-family: Open Sans;
+  font-weight: 700;
+  border: blue;
+  text-align: center;
+}
+
+.small-button {
+  display: inline-block;
+  width: 149px;
+  height: 45px;
+  font-size: 16px;
+}
+
+.big-button {
+  display: block;
+  width: 351px;
+  height: 78px;
+  font-size: 24px;
+  margin-bottom: 16px;
+  box-shadow: 0px 1px #4242e6;
+}
+
+.big-button:hover {
+  cursor: pointer;
+  box-shadow: 1px 2px #3e3eff;
 }
 
 /* ============================================ *
@@ -91,6 +121,7 @@ h3 {
   font-size: 24px;
   line-height: 33px;
   color: #333333;
+  padding-bottom: 8px;
 }
 
 p {
@@ -100,4 +131,9 @@ p {
   font-size: 18px;
   line-height: 25px;
   color: #333333;
+}
+
+small {
+  font-size: 12px;
+  color: #343434;
 }
