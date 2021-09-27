@@ -48,6 +48,44 @@ body {
   }
 }
 
+.choose h2 {
+  text-align: center;
+  margin: 0 auto;
+  padding: 3rem 0;
+}
+
+.choose__row {
+  display: flex;
+  flex-flow: row nowrap;
+  padding: 0 40px;
+}
+
+@media only screen and (max-width: 770px) {
+  .choose__row {
+    flex-flow: column nowrap;
+  }
+}
+
+.choose__row .choose__flex {
+  width: 50%;
+  padding: 1rem;
+  display: inline-flex;
+}
+
+@media only screen and (max-width: 770px) {
+  .choose__row .choose__flex {
+    width: 100%;
+  }
+}
+
+.choose__row .choose__flex .choose__flex--icon {
+  padding: 1rem 2rem 2rem 0;
+}
+
+.choose__row .choose__flex .choose__flex--text {
+  padding-right: 1rem;
+}
+
 /* ============================================ *
  * Containers
  * ============================================ */
@@ -90,35 +128,36 @@ body {
   .three-benefits {
     flex-flow: column wrap;
     justify-content: center;
-    padding: 1rem;
+    padding: 0 3rem;
   }
 }
 
 .three-benefits .benefit {
   display: inline-flex;
+  padding: 1rem;
 }
 
 .three-benefits .benefit p {
-  padding: 0 1rem;
+  padding: 1rem;
 }
 
 .three-benefits .benefit img {
   width: 60px;
   height: 60px;
-  padding-top: 1rem;
-}
-
-@media only screen and (max-width: 770px) {
-  .three-benefits .benefit {
-    padding: 1rem 0;
-  }
+  margin-top: 1rem;
 }
 
 .future-proof-container {
   background: rgba(48, 127, 245, 0.04);
   width: 100%;
-  padding: 4rem;
-  margin: 0 auto;
+  padding: 6rem 4rem;
+  margin: 2rem auto;
+}
+
+@media only screen and (max-width: 770px) {
+  .future-proof-container {
+    padding: 4rem 2rem;
+  }
 }
 
 .future-proof {
@@ -130,14 +169,36 @@ body {
   align-items: center;
 }
 
+@media only screen and (max-width: 770px) {
+  .future-proof {
+    flex-direction: column-reverse;
+    max-width: 600px;
+    justify-content: center;
+  }
+}
+
 .future-proof .future-proof--img {
   max-width: 60%;
   text-align: center;
+  width: 600px;
+}
+
+@media only screen and (max-width: 770px) {
+  .future-proof .future-proof--img {
+    max-width: 100%;
+  }
 }
 
 .future-proof .future-proof--text {
   max-width: 40%;
   text-align: left;
+}
+
+@media only screen and (max-width: 770px) {
+  .future-proof .future-proof--text {
+    max-width: 100%;
+    padding-bottom: 1.5rem;
+  }
 }
 
 /* ============================================ *
