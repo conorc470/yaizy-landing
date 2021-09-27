@@ -1,6 +1,12 @@
 @import 'typography';
 @import 'config';
 
+*, *::before, *::after {box-sizing: inherit};
+
+html {
+    box-sizing: border-box;
+}
+
 body {
     font-family: $font-stack;
 }
@@ -22,7 +28,6 @@ body {
     margin: 2rem 0 0 4rem;
     @media only screen and (max-width: 770px) {
         margin: 4rem 1rem;
-        width: 100%;
     }
 }
 
@@ -56,10 +61,58 @@ body {
     }
 }
 
+.three-benefits {
+    display: flex;
+    padding: 2rem 1rem;
+    @media only screen and (max-width: 770px) {
+        flex-flow: column wrap;
+        justify-content: center;
+        padding: 1rem;
+    }
+    .benefit {
+        display: inline-flex;
+
+        p {
+            padding: 0 1rem;
+        }
+        img {
+            width: 60px;
+            height: 60px;
+            padding-top: 1rem;
+        }
+        @media only screen and (max-width: 770px) {
+            padding: 1rem 0;
+        }
+    }
+}
+
+.future-proof-container {
+    background: rgba(48, 127, 245, 0.04);
+    width: 100%;
+    padding: 4rem;
+    margin: 0 auto;
+}
+
+.future-proof {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    .future-proof--img {
+        max-width: 60%;
+        text-align: center;
+    }
+    .future-proof--text {
+        max-width: 40%;
+        text-align: left;
+    }
+}
+
 /* ============================================ *
  * Buttons
  * ============================================ */
-
 %btn {
     background: #307FF5;
     border-radius: 4px;
@@ -100,13 +153,13 @@ body {
 /* ============================================ *
  * Typography
  * ============================================ */
-
 h1 {
     @include h1;
 }
 
 h2 {
     @include h2;
+    font-weight: 300;
 }
 
 h3 {
