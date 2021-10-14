@@ -1,6 +1,6 @@
-/* ============================================ *
- * Typography
- * ============================================ */
+/* Typography
+ * ============================================
+ */
 /* ============================================ *
  * Colour Palette
  * ============================================ */
@@ -10,7 +10,9 @@
 /* ============================================ *
  * Font Family
  * ============================================ */
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: inherit;
 }
 
@@ -86,6 +88,34 @@ body {
   padding-right: 1rem;
 }
 
+.trustpilot__row {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+}
+
+@media only screen and (max-width: 770px) {
+  .trustpilot__row {
+    flex-flow: column nowrap;
+  }
+}
+
+.trustpilot__row .trustpilot__reviews {
+  border: 1px solid #f7f7f7;
+  box-shadow: 0px 30px 40px rgba(212, 217, 232, 0.2);
+  border-radius: 8px;
+  width: 32%;
+  padding: 2rem;
+  display: inline-flex;
+}
+
+@media only screen and (max-width: 770px) {
+  .trustpilot__row .trustpilot__reviews {
+    width: 90%;
+    margin: 0 1rem;
+  }
+}
+
 /* ============================================ *
  * Containers
  * ============================================ */
@@ -117,6 +147,12 @@ body {
 
 .nav ul {
   list-style-type: none;
+}
+
+.trustpilot {
+  text-align: center;
+  margin: 0 auto;
+  padding-top: 6rem;
 }
 
 .three-benefits {
@@ -205,7 +241,7 @@ body {
  * Buttons
  * ============================================ */
 .small-button, .big-button {
-  background: #307FF5;
+  background: #307ff5;
   border-radius: 4px;
   color: #fff;
   font-family: Open Sans;
