@@ -13,6 +13,7 @@ html {
 
 body {
   font-family: $font-stack;
+  margin: 0;
 }
 
 .logo {
@@ -21,7 +22,7 @@ body {
 
 .banner-cta {
   padding: 1rem;
-  @media only screen and (max-width: 770px) {
+  @media only screen and (max-width: 1200px) {
     align-self: center;
     padding: 0 40px;
     text-align: center;
@@ -30,7 +31,7 @@ body {
 
 .banner-img img {
   margin: 2rem 0 0 4rem;
-  @media only screen and (max-width: 770px) {
+  @media only screen and (max-width: 1200px) {
     margin: 4rem 1rem;
   }
 }
@@ -45,14 +46,14 @@ body {
   display: flex;
   flex-flow: row nowrap;
   padding: 0 40px;
-  @media only screen and (max-width: 770px) {
+  @media only screen and (max-width: 1200px) {
     flex-flow: column nowrap;
   }
   .choose__flex {
     width: 50%;
     padding: 1rem;
     display: inline-flex;
-    @media only screen and (max-width: 770px) {
+    @media only screen and (max-width: 1200px) {
       width: 100%;
     }
     .choose__flex--icon {
@@ -69,7 +70,7 @@ body {
   flex-flow: row nowrap;
   //padding: 0 40px;
   justify-content: space-between;
-  @media only screen and (max-width: 770px) {
+  @media only screen and (max-width: 1200px) {
     flex-flow: column nowrap;
   }
   .trustpilot__reviews {
@@ -79,7 +80,7 @@ body {
     width: 32%;
     padding: 2rem;
     display: inline-flex;
-    @media only screen and (max-width: 770px) {
+    @media only screen and (max-width: 1200px) {
       width: 90%;
       margin: 0 1rem;
     }
@@ -99,7 +100,7 @@ body {
   flex-flow: row nowrap;
   justify-content: space-around;
   align-items: center;
-  @media only screen and (max-width: 770px) {
+  @media only screen and (max-width: 1200px) {
     flex-flow: column wrap;
     justify-content: center;
   }
@@ -125,7 +126,7 @@ body {
 .three-benefits {
   display: flex;
   padding: 2rem 1rem;
-  @media only screen and (max-width: 770px) {
+  @media only screen and (max-width: 1200px) {
     flex-flow: column wrap;
     justify-content: center;
     padding: 0 3rem;
@@ -150,7 +151,7 @@ body {
   width: 100%;
   padding: 6rem 4rem;
   margin: 2rem auto;
-  @media only screen and (max-width: 770px) {
+  @media only screen and (max-width: 1200px) {
     padding: 4rem 2rem;
   }
 }
@@ -162,7 +163,7 @@ body {
   justify-content: space-between;
   flex-direction: row;
   align-items: center;
-  @media only screen and (max-width: 770px) {
+  @media only screen and (max-width: 1200px) {
     flex-direction: column-reverse;
     max-width: 600px;
     justify-content: center;
@@ -171,17 +172,80 @@ body {
     max-width: 60%;
     text-align: center;
     width: 600px;
-    @media only screen and (max-width: 770px) {
+    @media only screen and (max-width: 1200px) {
       max-width: 100%;
     }
   }
   .future-proof--text {
     max-width: 40%;
     text-align: left;
-    @media only screen and (max-width: 770px) {
+    @media only screen and (max-width: 1200px) {
       max-width: 100%;
       padding-bottom: 1.5rem;
     }
+  }
+}
+
+.footer__container {
+  background-image: url("/img/footer_img.png");
+  width: 100%;
+  height: 700px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 6rem 4rem;
+  margin-top: 6rem;
+  @media only screen and (max-width: 1200px) {
+    padding: 3rem;
+  }
+  .footer__flex {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: row;
+    @media only screen and (max-width: 1200px) {
+      flex-direction: column-reverse;
+      max-width: 600px;
+      justify-content: center;
+      align-items: center;
+      padding-top: 5rem;
+    }
+  }
+  .footer__cta {
+    background: #ffffff;
+    border-radius: 8px;
+    max-width: 40%;
+    padding: 3.5rem;
+    text-align: center;
+    @media only screen and (max-width: 1200px) {
+      min-width: 100%;
+      //padding: 2rem;
+    }
+    h2 {
+      font-weight: bold;
+      font-size: 36px;
+      line-height: 44px;
+      text-align: center;
+      color: #333333;
+    }
+    p {
+      padding-bottom: 1rem;
+      font-weight: normal;
+      font-size: 24px;
+      line-height: 40px;
+      text-align: center;
+      color: #333333;
+    }
+  }
+}
+
+.footer {
+  padding: 0.5rem 0;
+  text-align: center;
+  margin: 0 auto;
+  p {
+    font-weight: lighter;
   }
 }
 
@@ -213,7 +277,7 @@ body {
   font-size: 24px;
   margin-bottom: 16px;
   box-shadow: 0px 1px rgb(66, 66, 230);
-  @media only screen and (max-width: 770px) {
+  @media only screen and (max-width: 1200px) {
     text-align: center !important;
     align-self: center !important;
     margin: 0 auto;

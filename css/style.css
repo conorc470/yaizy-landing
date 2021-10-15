@@ -22,6 +22,7 @@ html {
 
 body {
   font-family: "Open Sans", sans-serif;
+  margin: 0;
 }
 
 .logo {
@@ -32,7 +33,7 @@ body {
   padding: 1rem;
 }
 
-@media only screen and (max-width: 770px) {
+@media only screen and (max-width: 1200px) {
   .banner-cta {
     align-self: center;
     padding: 0 40px;
@@ -44,7 +45,7 @@ body {
   margin: 2rem 0 0 4rem;
 }
 
-@media only screen and (max-width: 770px) {
+@media only screen and (max-width: 1200px) {
   .banner-img img {
     margin: 4rem 1rem;
   }
@@ -62,7 +63,7 @@ body {
   padding: 0 40px;
 }
 
-@media only screen and (max-width: 770px) {
+@media only screen and (max-width: 1200px) {
   .choose__row {
     flex-flow: column nowrap;
   }
@@ -74,7 +75,7 @@ body {
   display: inline-flex;
 }
 
-@media only screen and (max-width: 770px) {
+@media only screen and (max-width: 1200px) {
   .choose__row .choose__flex {
     width: 100%;
   }
@@ -94,7 +95,7 @@ body {
   justify-content: space-between;
 }
 
-@media only screen and (max-width: 770px) {
+@media only screen and (max-width: 1200px) {
   .trustpilot__row {
     flex-flow: column nowrap;
   }
@@ -109,7 +110,7 @@ body {
   display: inline-flex;
 }
 
-@media only screen and (max-width: 770px) {
+@media only screen and (max-width: 1200px) {
   .trustpilot__row .trustpilot__reviews {
     width: 90%;
     margin: 0 1rem;
@@ -131,7 +132,7 @@ body {
   align-items: center;
 }
 
-@media only screen and (max-width: 770px) {
+@media only screen and (max-width: 1200px) {
   .flex-container {
     flex-flow: column wrap;
     justify-content: center;
@@ -160,7 +161,7 @@ body {
   padding: 2rem 1rem;
 }
 
-@media only screen and (max-width: 770px) {
+@media only screen and (max-width: 1200px) {
   .three-benefits {
     flex-flow: column wrap;
     justify-content: center;
@@ -190,7 +191,7 @@ body {
   margin: 2rem auto;
 }
 
-@media only screen and (max-width: 770px) {
+@media only screen and (max-width: 1200px) {
   .future-proof-container {
     padding: 4rem 2rem;
   }
@@ -205,7 +206,7 @@ body {
   align-items: center;
 }
 
-@media only screen and (max-width: 770px) {
+@media only screen and (max-width: 1200px) {
   .future-proof {
     flex-direction: column-reverse;
     max-width: 600px;
@@ -219,7 +220,7 @@ body {
   width: 600px;
 }
 
-@media only screen and (max-width: 770px) {
+@media only screen and (max-width: 1200px) {
   .future-proof .future-proof--img {
     max-width: 100%;
   }
@@ -230,11 +231,87 @@ body {
   text-align: left;
 }
 
-@media only screen and (max-width: 770px) {
+@media only screen and (max-width: 1200px) {
   .future-proof .future-proof--text {
     max-width: 100%;
     padding-bottom: 1.5rem;
   }
+}
+
+.footer__container {
+  background-image: url("/img/footer_img.png");
+  width: 100%;
+  height: 700px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 6rem 4rem;
+  margin-top: 6rem;
+}
+
+@media only screen and (max-width: 1200px) {
+  .footer__container {
+    padding: 3rem;
+  }
+}
+
+.footer__container .footer__flex {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: row;
+}
+
+@media only screen and (max-width: 1200px) {
+  .footer__container .footer__flex {
+    flex-direction: column-reverse;
+    max-width: 600px;
+    justify-content: center;
+    align-items: center;
+    padding-top: 5rem;
+  }
+}
+
+.footer__container .footer__cta {
+  background: #ffffff;
+  border-radius: 8px;
+  max-width: 40%;
+  padding: 3.5rem;
+  text-align: center;
+}
+
+@media only screen and (max-width: 1200px) {
+  .footer__container .footer__cta {
+    min-width: 100%;
+  }
+}
+
+.footer__container .footer__cta h2 {
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 44px;
+  text-align: center;
+  color: #333333;
+}
+
+.footer__container .footer__cta p {
+  padding-bottom: 1rem;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 40px;
+  text-align: center;
+  color: #333333;
+}
+
+.footer {
+  padding: 0.5rem 0;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.footer p {
+  font-weight: lighter;
 }
 
 /* ============================================ *
@@ -265,7 +342,7 @@ body {
   box-shadow: 0px 1px #4242e6;
 }
 
-@media only screen and (max-width: 770px) {
+@media only screen and (max-width: 1200px) {
   .big-button {
     text-align: center !important;
     align-self: center !important;
