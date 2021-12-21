@@ -34,26 +34,26 @@
 				</header>
 				<section class="register-form">
 					<article class="form-container">
-						<form action="" class="form">
+						<form action="" class="form" id="form">
 							<h3>1. Parent Details</h3>
 							<label for="parentName">Parents Full Name</label>
-							<input type="text" id="parentName" name="parentName">
+							<input type="text" id="parentName" name="parentName" required>
 							<label for="parentEmail">Parents Email Address</label>
-							<input type="email" id="parentEmail" name="parentEmail">
-							<label for="parentPassword">Password</label><small>Show Password</small>
-							<input type="password" id="password" name="password">
+							<input type="email" id="parentEmail" name="parentEmail" required>
+							<label for="parentPassword">Password</label>
+							<input type="password" id="password" name="password" required>
 							<label for="phoneNumber">Phone Number</label>
-							<input type="number" id="phoneNumber" name="phoneNumber">
+							<input type="number" id="phoneNumber" name="phoneNumber" required>
 							<h3>2. Child Details</h3>
 							<label for="childName">Child’s Full Name</label>
-							<input type="text" id="childName" name="childName">
+							<input type="text" id="childName" name="childName" required>
 							<h3>3. Choose Trial Date & Time</h3>
 							<label for="trialDate">When would you like to join the trial lesson?</label>
-							<select id="trialDate" name="trialDate">
+							<select id="trialDate" name="trialDate" required>
 								<option value="February 25th">February 25th</option>
 								<option value="February 26th">February 26th</option>
 							</select>
-							<input type="submit" value="Confirm Booking">
+							<input id="submit" type="submit" value="Confirm Booking">
 						</form>
 					</article>
 				<aside class="summary">
