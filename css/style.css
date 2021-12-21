@@ -21,6 +21,117 @@ body {
   height: 50px;
 }
 
+.nav {
+  border-bottom: 1px solid lightgrey;
+  padding-bottom: 1rem;
+}
+
+.help-link {
+  color: #307ff5;
+}
+
+.onboarding {
+  text-align: left;
+  padding: 4rem 0 0 0;
+}
+
+@media only screen and (max-width: 900px) {
+  .onboarding {
+    width: 200%;
+  }
+}
+
+.book {
+  width: 100%;
+}
+
+.book h1 {
+  margin-bottom: 1.5rem;
+}
+
+.book p {
+  padding-top: 0;
+  margin-top: 0;
+}
+
+.register-form {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+}
+
+@media only screen and (max-width: 1200px) {
+  .register-form {
+    flex-flow: column nowrap;
+  }
+}
+
+.form-container {
+  flex-basis: 60%;
+  padding: 1.5rem 3rem 0 0;
+}
+
+@media only screen and (max-width: 1200px) {
+  .form-container {
+    padding: 0;
+    margin: 1rem 0;
+  }
+}
+
+.form {
+  padding: 1rem 2rem 2rem 2rem;
+  background: #f7f7f7;
+  font-size: 16px;
+}
+
+.form h3 {
+  font-weight: 300;
+}
+
+input, select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0 18px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type="submit"] {
+  padding: 1.5rem 0;
+  margin: 2rem 0  0;
+  font-size: 16px;
+  font-weight: 600;
+  box-shadow: 0px 1px #4242e6;
+}
+
+input[type="submit"]:hover {
+  cursor: pointer;
+  box-shadow: 1px 2px #3e3eff;
+}
+
+.summary {
+  flex-basis: 40%;
+  padding: 2rem 2rem 0 0;
+}
+
+.summary h3 {
+  color: #767676;
+  font-weight: 300;
+}
+
+.summary p {
+  font-size: 14px;
+  line-height: 1.8;
+  padding: 0;
+  color: #767676;
+}
+
+label {
+  font-weight: 400;
+}
+
 .banner-cta {
   padding: 1rem;
 }
@@ -112,6 +223,7 @@ body {
 .container {
   max-width: 1200px;
   margin: 0 auto;
+  padding: 1rem;
 }
 
 .flex-container {
@@ -304,7 +416,7 @@ body {
 }
 
 /*===== Buttons =====*/
-.small-button, .big-button {
+input[type="submit"], .small-button, .big-button {
   background: #307ff5;
   border-radius: 4px;
   color: #fff;
